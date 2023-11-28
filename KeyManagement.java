@@ -26,6 +26,15 @@ public class KeyManagement {
     }
 
 
+    /**
+     * Stores a secret key in a JCEKS keystore file.
+     * 
+     * @param storeFilename the filename of the keystore file
+     * @param storePassword the password that protects the keystore file
+     * @param key the secret key to be stored
+     * @param alias the alias to be associated with the secret key
+     * @param keyPassword the password that protects the secret key
+     */
     public void storeKey(String storeFilename,char[]
         storePassword,SecretKey key,String alias,char[] keyPassword){
         try {
@@ -46,6 +55,9 @@ public class KeyManagement {
         }
 
     
+        /**
+         * Represents a secret (symmetric) key.
+         */
         public SecretKey loadKey(String storeFilename,char[]
         storePassword,String alias,char[] keyPassword){
         try {
