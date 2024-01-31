@@ -1,1 +1,2 @@
 # compSec
+Computer Security course 
